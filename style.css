@@ -120,6 +120,7 @@ a {
 .input-container input {
   font-size: 30px;
   padding: 20px;
+  height: 80px;
   text-align: right;
   border: 5px solid black;
   background-color: rgb(255, 255, 255);
@@ -128,13 +129,16 @@ a {
 
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
 .input-container button {
+  position:absolute;
   border: 10px ridge pink;
   background-color: darkred;
+  width: 200px;
+  height: 90px;
+  right: 0px;
+  top: 180px;
   color: white;
   font-size: 40px;
-  padding: 30px;
   cursor: crosshair;
-  transform: rotate(-10deg);
 }
 
 /* En knapp med blå bakgrund och vit text */
