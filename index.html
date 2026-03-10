@@ -28,6 +28,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,36 +37,37 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 </head>
 
 <body>
-    <nav class="navigation">
-        <span class="nav-item"><a href="index.html" target="_top">Home</a></span>
-        <span class="nav-item"><a href="https://www.bbc.com/news/world" target="_blank">BBC News</a></span>
-        <span class="nav-item"><a href="https://www.bbc.com/sport" target="_blank">BBC Sports</a></span>
-        <span class="nav-item"><a href="https://en.wikipedia.org/wiki/Entertainment" target="_blank">Entertainment</a></span>
-    </nav>
 
-    <!-- Svåråtkomligt inputfällt -->
-    <div class="input-container">
-        <input type="text" placeholder="Enter text">
-        <button><a href="#">Search</a></button>
-    </div>
+    <header>
+        <nav class="navigation">
+            <span class="nav-item"><a href="index.html" target="_top">Home</a></span>
+            <span class="nav-item"><a href="https://www.bbc.com/news/world" target="_blank">BBC News</a></span>
+            <span class="nav-item"><a href="https://www.bbc.com/sport" target="_blank">BBC Sports</a></span>
+            <span class="nav-item"><a href="https://en.wikipedia.org/wiki/Entertainment"
+                    target="_blank">Entertainment</a></span>
+        </nav>
 
-    <!-- Dold text och klickbar div. 
-     .hidden-text är nästan osynlig p.g.a. låg opacity och roterad tex -->
+        <!-- Svåråtkomligt inputfällt -->
+        <div class="input-container">
+            <input type="text" placeholder="Enter text">
+            <button><a href="#">Search</a></button>
+        </div>
+    </header>
 
-    <div class="container">
+    <main class="container">
 
         <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
         <h1>A11y News</h1>
-        <h1></h1>
 
-        <div class="article">
+        <article class="article">
             <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
-            <p class="headline">Breaking News: ...!</p>
+            <h2 class="headline">Breaking News: ...!</h2>
             <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
                 unnamed species is believed to have unique traits that could contribute to future medical research and
                 biotechnology.</p>
-            <a href="404.html">Click here!</a>
-        </div>
+            <p class="articleLink"><a href="https://www.csiro.au/en/news/All/Articles/2025/October/New-species-of-shark-and-crab"
+                    target="_blank">Read full article ></a></p>
+        </article>
 
         <!-- Klicka på artikeln för att visa ett meddelande, men den utför egentligen inget. -->
         <div class="article" onclick="alert('This does nothing!')">
@@ -77,29 +79,30 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
         <div class="article">
             <p>The symbol of our site, the flower !</p>
-            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" alt="an image of a flower" width="400">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg"
+                alt="an image of a flower" width="400">
         </div>
 
         <!-- Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
-        <div class="article">
+        <!--         <div class="article">
             <video autoplay muted src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
             <img src="http://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" alt="an image of a man waving with his left arm">
-        </div>
-    </div>
+        </div> -->
+    </main>
 
     <!-- En irriterande annons som alltid syns och innehåller en snurrande bild samt en vilseledande text -->
-    <div id="fake-ad">
+<!--     <div id="fake-ad">
         <aside class="top-section">
             <div class="image-container">
-                <img class="rotating-image" src="images/chest.png" alt="an image of a rotating chest - for advertisement">
+                <img src="images/chest.png" alt="an image of a chest - for advertisement">
             </div>
-            <p>🎉 You have won $10,000! 🎉</p>
+            <p>🎉 Try to win $10,000! 🎉</p>
             <div class="image-container">
-                <img class="rotating-image" src="images/chest.png" alt="an image of a rotating chest - for advertisement">
+                <img src="images/chest.png" alt="an image of a chest - for advertisement">
             </div>
         </aside>
-        <p class="btext">Click here to collect your money!</p>
-    </div>
+        <p class="btext">Click here to compete!</p>
+    </div> -->
 
 
     <!-- <script src="script.js" defer></script> -->
