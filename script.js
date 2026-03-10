@@ -1,8 +1,9 @@
 // Simulerad blockering av tråden
-setInterval(() => {
+
+/* setInterval(() => {
   let start = Date.now()
   while (Date.now() - start < 1000) {}
-}, 3000)
+}, 3000) */
 
 // Förhindrar användaren att navigera bakåt
 
