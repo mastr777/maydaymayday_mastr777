@@ -73,39 +73,39 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             <div>Lunar New Year: Celebrate with us!</div>
 
             <!-- Bilder visas inte, varför? -->
-            <div class="image-container">
+<!--             <div class="image-container">
                 <img src="/images/ocean.jpg">
                 <img src="/images/city.jpg">
                 <img src="/images/family.jpg">
-            </div>
+            </div> -->
 
             <!-- <p>Access the news by pressing the images</p> -->
         </div>
 
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
-        <div class="article" style="display: none;">
-            <p class="headline">Se en 50MB bild ladda långsamt!</p>
-            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="50000">
+        <div class="article">
+            <p>The symbol of our site, the flower !</p>
+            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" alt="an image of a flower" width="400">
         </div>
 
         <!-- Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
         <div class="article">
             <video autoplay muted src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-            <img src="http://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif">
+            <img src="http://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" alt="an image of a man waving with his left arm">
         </div>
     </div>
 
     <!-- En irriterande annons som alltid syns och innehåller en snurrande bild samt en vilseledande text -->
     <div id="fake-ad">
-        <div class="top-section">
+        <aside class="top-section">
             <div class="image-container">
-                <img class="rotating-image" src="images/chest.png">
+                <img class="rotating-image" src="images/chest.png" alt="an image of a rotating chest - for advertisement">
             </div>
             <p>🎉 You have won $10,000! 🎉</p>
             <div class="image-container">
-                <img class="rotating-image" src="images/chest.png">
+                <img class="rotating-image" src="images/chest.png" alt="an image of a rotating chest - for advertisement">
             </div>
-        </div>
+        </aside>
         <p class="btext">Click here to collect your money!</p>
     </div>
 
