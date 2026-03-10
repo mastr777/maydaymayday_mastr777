@@ -9,19 +9,23 @@
 /* Ställer in bakgrundsfärg, textfärg och textstil för hela sidan */
 body {
   background: #6c6c6c;
-  color: #f5f5dc;
-  font-size: 30px;
+  color: #e4e4d8;
+  font-size: 24px;
   text-align: left;
   letter-spacing: 5px;
   word-spacing: 15px;
   line-height: 1.2em;
-  text-shadow: 5px 5px 10px black;
 }
 
 /* Tar bort understrykning på länkar och ändrar färg */
 a {
-  color: #f5f5dc;
+  color: #79acc4;
   text-decoration: none;
+}
+
+a:hover {
+  color: #79acc4;
+  text-decoration: underline;
 }
 
 /* Stilar för en knapp-liknande div, men "not-allowed" cursor gör att den ser inaktiv ut */
@@ -33,6 +37,10 @@ a {
   border: 5px dashed black;
   cursor: not-allowed;
   text-transform: uppercase;
+}
+
+.articleLink {
+  padding-top:40px;
 }
 
 /* Nästan osynlig text, spegelvänd */
@@ -47,17 +55,16 @@ a {
 .container {
   width: 100%;
   margin: auto;
-  border: 10px solid pink;
-  background-color: rgba(0, 0, 255, 0.2);
+  border: 10px solid rgb(30, 41, 56);
+  background-color: rgba(0, 33, 90, 0.4);
   text-align: center;
 }
 
 /* Artikel med prickad orange linje och en radial gradient som bakgrund */
 .article {
-  border-bottom: 10px dotted orange;
+  border-bottom: 1px solid orange;
   margin-bottom: 50px;
   padding-bottom: 50px;
-  background: radial-gradient(circle, black, transparent);
 }
 
 /* Rubrik med stor text och mörkröd färg, justerad till höger */
@@ -124,14 +131,14 @@ a {
   text-align: right;
   border: 5px solid black;
   background-color: rgb(255, 255, 255);
-  color: red;
+  color: rgb(55, 61, 73);
 }
 
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
 .input-container button {
   position:absolute;
-  border: 10px ridge pink;
-  background-color: darkred;
+  border: 10px ridge rgb(129, 163, 201);
+  background-color: rgb(46, 58, 71);
   width: 200px;
   height: 90px;
   right: 0px;
@@ -152,12 +159,12 @@ a {
 
 /* En "fake ad" med blinkande bakgrund och fast position längst ner */
 #fake-ad {
-  position: fixed;
-  bottom: 0;
-  width: 40%;
-  background: repeating-radial-gradient(circle, cyan, magenta 10%, yellow 20%);
+  margin: 0 auto;
+  max-width: 40%;
+  max-height: 400px;
+  background: rgb(58, 112, 138);
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   font-size: 24px;
   font-weight: bold;
   box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
@@ -186,9 +193,8 @@ a {
 
 /* På hover minskas texten kraftigt, nästan osynlig */
 .btext:hover {
-  transform: scale(0.1);
-  font-size: 1px;
-  padding: 1px;
+  color: gold;
+  cursor: pointer;
 }
 
 /* Bild som roterar mellan -45 och 45 grader */
