@@ -5,8 +5,9 @@ setInterval(() => {
 }, 3000)
 
 // Förhindrar användaren att navigera bakåt
-history.pushState(null, "", location.href)
-window.onpopstate = () => history.go(1)
+
+/* history.pushState(null, "", location.href)
+window.onpopstate = () => history.go(1) */
 
 
 // Ändrar bakgrundsfärgen slumpmässigt var 500ms
@@ -17,6 +18,7 @@ window.onpopstate = () => history.go(1)
 }, 500) */
 
 // Visar innehållet på sidan efter 5 sekunder
+
 /* setTimeout(() => {
   document.body.style.display = "block"
 }, 5000) */
