@@ -17,9 +17,9 @@ window.onpopstate = () => history.go(1)
 }, 500) */
 
 // Visar innehållet på sidan efter 5 sekunder
-setTimeout(() => {
+/* setTimeout(() => {
   document.body.style.display = "block"
-}, 5000)
+}, 5000) */
 
 
 // Loggar 10000 tal till konsolen efter 1 sekund
