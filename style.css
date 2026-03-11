@@ -13,15 +13,15 @@ body {
   font-size: 24px;
   text-align: left;
   letter-spacing: 1px;
-  word-spacing: 7px;
+  word-spacing: 4px;
   line-height: 1.2em;
 }
 
 h1 {
   position: absolute;
   top: 0;
-  font-size: 28px;
-  font-weight:600;
+  font-size: 24px;
+  font-weight: bolder;
   left: 100px;
   color: rgb(26, 162, 224);
 }
@@ -80,17 +80,16 @@ a:hover {
   max-width: 770px;
   margin-bottom: 50px;
   padding-bottom: 70px;
-  padding-top: 90px;
+  padding-top: 50px;
 }
 
 /* Rubrik med stor text och mörkröd färg, justerad till höger */
 .headline {
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 500;
   color: orange;
   text-align: center;
   margin: 50px;
-  padding: 20px;
 }
 
 /* Navigeringsmeny med mörk bakgrund och jämnt fördelade element */
@@ -99,7 +98,7 @@ a:hover {
   padding: 30px 70px 30px 0;
   width: 100%;
   text-align: right;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -141,11 +140,14 @@ a:hover {
 
 /* Inputfält med röd text och svart ram */
 .input-container input {
+  position:relative;
   font-size: 30px;
   padding: 20px;
   height: 80px;
+  top: 10px;
+  right: 20px;
   text-align: right;
-  border: 5px solid black;
+  border: 3px solid black;
   background-color: rgb(255, 255, 255);
   color: rgb(55, 61, 73);
 }
@@ -153,14 +155,14 @@ a:hover {
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
 .input-container button {
   position:absolute;
-  border: 10px ridge rgb(129, 163, 201);
+  border: 3px ridge rgb(129, 163, 201);
   background-color: rgb(46, 58, 71);
   width: 200px;
-  height: 90px;
-  right: 0px;
-  top: 180px;
+  height: 70px;
+  right: 20px;
+  top: 210px;
   color: white;
-  font-size: 40px;
+  font-size: 32px;
   cursor: crosshair;
 }
 
