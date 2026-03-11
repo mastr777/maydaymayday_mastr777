@@ -138,6 +138,18 @@ a:hover {
   background: #ffffff00; /* Genomskinlig bakgrund */
 }
 
+.flowerText {
+  color: rgb(6, 21, 36);
+  padding: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.flowerImage {
+  width: 40%;
+  padding-bottom: 20px;
+}
+
 /* Inputfält med röd text och svart ram */
 .input-container input {
   position:relative;
