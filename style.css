@@ -87,7 +87,7 @@ a:hover {
 .headline {
   font-size: 32px;
   font-weight: 500;
-  color: orange;
+  color: rgb(255, 200, 99);
   text-align: center;
   margin: 50px;
 }
@@ -139,7 +139,7 @@ a:hover {
 }
 
 .flowerText {
-  color: rgb(6, 21, 36);
+  color: rgb(121, 248, 255);
   padding: 40px;
   font-size: 30px;
   font-weight: 700;
